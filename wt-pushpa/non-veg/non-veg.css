@@ -1,0 +1,90 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;;
+    font-family: 'Great Vibes', cursive;
+}
+
+body {
+    background:transparent;
+    background-image: linear-gradient();
+    min-height: 100vh;
+    background-color: black;
+}
+
+.container form{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap:2rem;
+}
+
+.starter, .rice, .roti, .curry {
+    display: grid;
+    gap: 1rem;
+    padding : 1rem;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.starter-list, .rice-list, .roti-list, .curry-list {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+
+.starter-list, .rice-list, .roti-list, .curry-list {
+    display: grid;
+    gap: 1rem;
+    font-size: 1.3rem;
+    
+}
+
+h2 {
+    font-size: 2.3rem;
+    /* color: #023047; */
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+}
+
+h2::after {
+    content:" ";
+    position: absolute;
+    background-color: #000;
+    width: 80%;
+    height: 3px;
+    left:10%;
+    bottom:0;
+}
+
+label {
+    color: #023047;
+    font-weight: 900;
+    font-size: 1.6rem;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.content {
+    padding: 20px;
+    background-color:rgba(248, 248, 248, 0.367);
+    border:solid 2px rgb(0, 0, 0);
+}
+
+.container img {
+    width: 400px;
+}

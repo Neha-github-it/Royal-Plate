@@ -1,0 +1,137 @@
+
+/* #e85d04 */
+/* #d00000 */
+/* #f48c06 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+body {
+    background-image: url("../img/dark.jpeg");
+    background-image: -moz-linear-gradient() ;-moz-repeating-linear-gradient() ;
+    background-image: repeat
+    background-size:;
+    padding: 50px;
+    /* background-position: top right ; */
+}
+
+header  h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding: 3vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 8rem;
+}
+
+.veg, 
+.non-veg, 
+.dessert {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+   
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+
+    /* justify-items: center;
+    align-items: center; */
+}
+
+.veg {
+    background:transparent;
+box-shadow: 2px 2px 10px white;
+}
+
+.non-veg {
+    background:transparent;
+    box-shadow: 2px 2px 10px white;
+}
+
+.dessert {
+    background: transparent;
+    box-shadow: 2px 2px 10px white;
+}
+
+.items {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(248, 248, 248, 0.5);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+li h2 {
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 10px;
+
+}
+
+li h2::after {
+    content:" ";
+    position: absolute;
+    background-color: #000;
+    width: 120%;
+    height: 3px;
+    left:-10%;
+    bottom: -10px;
+}
+
+figure {
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
+::marker{
+    content: "";
+}
+*
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+*
+{
+    background: transparent;
+}

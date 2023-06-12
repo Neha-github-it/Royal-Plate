@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Griffy&family=Inspiration&family=Shalimar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Dosis:wght@200&family=Griffy&family=Inspiration&family=Quicksand&family=Shalimar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Cinzel:wght@500&family=Dosis:wght@200;400&family=Griffy&family=Inspiration&family=Poor+Story&family=Quicksand&family=Shalimar&family=Stick+No+Bills:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Chakra+Petch:wght@300&family=Cinzel:wght@500&family=Dosis:wght@200;400&family=Griffy&family=Inspiration&family=Poor+Story&family=Quicksand&family=Shalimar&family=Stick+No+Bills:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.bk
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url('cu.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+   position: relative;
+}
+.nav
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+ nav ul li a 
+ {
+    color: lavenderblush;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+
+nav ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: whitesmoke;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after
+{
+    width: 50%;
+
+}
+.co
+{
+    
+   
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    transform: translate(1.5%);
+    width: 100%;    
+}
+.co p
+{
+    color: white;
+    font-family: 'Inspiration', cursive;
+    font-size: 120px; 
+    
+}
+.co h5{
+    color: whitesmoke;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+.kl
+{
+border: 1px solid white ;
+padding: 12px 34px;
+font-size: 15px;
+background: none;
+margin: 10px;
+cursor: pointer;
+color: grey;
+transition: o.8s;
+position: relative;
+overflow: hidden;
+
+}
+.kl:hover
+{
+    color:black;
+}
+.kl::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: white;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 50% 50% 0 0;
+}
+.kl:hover::before
+{
+    height: 180%;
+}
+
+
+
+/*desserts*/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+   background-image: url('dark.jpeg');
+   background-repeat: repeat;
+}
+
+.dog 
+    {
+       height: 65vh;
+       width: 50%;
+       background:transparent;
+       z-index: 10;
+       display: flex;
+       text-align: center;
+       position: relative;
+       border-radius: 20px;
+       border: 2px solid rgba(255, 255, 255, .5);
+       backdrop-filter: blur(25px);
+       box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+       margin-top: 100px;
+       margin-left: 400px;
+        
+    }
+    img
+    {
+        display: grid;   
+    }
+    input[type=submit]
+    {
+       padding: 5px 30px;
+       display: inline-block;
+       margin-left: 550px;
+       margin-right: 250px;
+       background: transparent;
+       color: whitesmoke;
+       border-radius: 100px;
+    }
+    
+    .klo h4
+{
+    color: aliceblue;
+    display: inline-flex;
+    padding-left: 100px;
+    margin-left: 150px;
+    font-size: 30px;
+   font-family: 'Stick No Bills', sans-serif;
+}
+
+.klo
+    {
+        margin-top: 60px;
+        margin-left: 30px;
+        animation: animate 28s infinite; 
+    }
+@keyframes animate
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+    10%
+    {
+        transform: translateX(0);
+    }
+    25%
+    {
+        transform: translateX(-100%);
+    }
+    35%
+    {
+        transform: translateX(-205%);
+    }
+    45%
+    {
+        transform: translateX(-310%);
+    }
+    55%
+    {
+        transform: translateX(-410%);
+    }
+    65%
+    {
+        transform: translateX(-515%);
+    }
+    75%
+    {
+        transform: translateX(-615%);
+    }
+    85%
+    {
+        transform: translateX(-723%);
+    }
+    95%
+    {
+        transform: translateX(-823%); 
+    }
+    100%
+    {
+        transform: translateX(-960%);
+    }
+
+}
+.ban
+{
+    color: aliceblue;
+    padding: 30px 125px;
+    font-family: 'Courier New', Courier, monospace;
+}

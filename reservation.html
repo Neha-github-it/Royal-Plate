@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="web.css">
+<title>Book a Table</title>
+<style>
+body {
+    background: url(dark.jpeg);
+    }
+h2 {
+  margin-left: 100px;
+  margin-top: 10px;
+  color: white;
+  font-family: 'Inspiration', cursive;
+  font-size: 50px; 
+}
+h3 {
+  text-align:center;
+  color:azure; 
+  font-size:40px;
+}
+/*glassmorphism*/
+.booking:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+.booking {align-self: center; align-items: left;
+    margin:20%; margin-top: 2%;
+    padding: 3%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    position:relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+form {align-items: center; 
+    font-family:'Times New Roman', Times, serif;
+    font: size 130px;
+    padding: 5%; border: 2px;
+}
+input {
+    background: hsl(0 0% 93%);
+    border-radius: .25rem;
+    border: none;
+    padding: 3px ;
+}
+select {
+    background: hsl(0 0% 93%);
+    border-radius: .25rem;
+    border: none;
+    padding: 3px ;
+}
+/*toggle switch*/
+/*.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider.round {
+    border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    /*top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(6, 6, 6);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider.round:before {
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #060606;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #070707;
+} 
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}*/
+
+/*conformation alert*/
+
+#container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 700px;
+    height: 250px;
+  }
+  
+  h1 {
+    font-size: 0.9em;
+    font-weight: 100;
+    letter-spacing: 3px;
+    padding-top: 5px;
+    /*color: #FCFCFC;*/
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  .green {
+    color: darken(#111111, 20%);
+  }
+
+  .alert {
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+  
+  p {
+    margin-top: -5px;
+    font-size: 0.5em;
+    font-weight: 100;
+    color: darken(#777777, 10%);
+    letter-spacing: 1px;
+  }
+
+  button, .dot {
+    cursor: pointer;
+  }
+  
+  #success-box {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 12%;
+    background: linear-gradient(to bottom right, #B0DB7D 40%, #99DBB4 100%);
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(#CBCDD3, 10%);
+    perspective: 40px;
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    background: #FCFCFC;
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    right: 6%;}
+  /*alert box close cross*/
+  .dot.closebtn {
+    align-items: center;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .dot.closebtn:hover {
+    color: black;
+  }
+  .dot:hover {
+      background-color: darken(#FCFCFC, 20%);
+    }
+  
+  .message {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 40%;
+    top: 47%;
+  }
+  
+  .button-box {
+    position: absolute;
+    background: #FCFCFC;
+    width: 50%;
+    height: 15%;
+    border-radius: 20px;
+    top: 73%;
+    left: 25%;
+    outline: 0;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(#777777, .5);
+    transition: all .5s ease-in-out;
+  }
+  .button-box:hover {
+    background-color: darken(#FCFCFC, 5%);
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="web.html">HOME</a></li>
+        <li><a href="desserts.html">DESSERTS</a></li>
+        <li><a href="reservation.html">RESERVATION</a></li>
+        <li><a href="wt-pushpa\index.html">ORDER ONLINE</a></li>
+        <li><a href="about.html">ABOUT US </a></li>
+        </ul>
+  </nav>
+  <br/><br/><br/>
+  <h3>Book a Table</h3>
+  <form style="font-family:'Times New Roman', Times, serif; font-size:20px; color:azure">
+    <div class="booking" >
+        Name: <input type="text" />
+        &nbsp;Gender: <select name="hall" value="select">
+            <option value="none" selected disabled hidden></option>
+            <option style="background-color:rgba(51, 50, 50, 0.156); color:azure; font-size:20px; ">Male</option>
+            <option style="background-color:rgba(51, 50, 50, 0.156); color:azure; font-size:20px; ">Female</option>
+            <option style="background-color:rgba(51, 50, 50, 0.156); color:azure; font-size:20px; ">Prefer not to say &nbsp;</option>
+        </select>
+        <br/><br/>
+        Mobile Number: <input type="text" /><br/><br/>
+        Location: <select name="hall" value="select">
+          <option value="none" selected disabled hidden></option>
+          <option style="background-color:rgba(51, 50, 50, 0.156); color:azure; font-size:20px; ">Jaynagar</option>
+          <option style="background-color:rgba(51, 50, 50, 0.156); color:azure; font-size:20px; ">Rajaginagar</option>
+          <option style="background-color:rgba(51, 50, 50, 0.156); color:azure; font-size:20px; ">HSR Layout &nbsp;</option>
+      </select>
+        &nbsp;Date for Reservation: <input type="datetime-local"><br/><br/>
+        Number of Gusets: <input type="text" /><br/><br/>  
+        <!--&nbsp;&nbsp;Special Occation: 
+        <label class="switch"></label>
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>-->
+        
+        <button type="submit" onclick="container">Book</button>
+    </div>
+  </form>
+<!--conformation alert*-->
+<div id="container">
+    <div id="success-box">
+      <div class="dot">
+        <span class="closebtn" onclick="this.parentElement.style.display=none;">&times</span>
+      </div>
+      <div class="message"><h1 class="alert">Success!</h1><p>yay, everything is working.</p></div>
+      <a href='conformation.html'><button class="button-box"><h1 class="green">continue</h1></button></a>
+    </div>
+</body>
+</html>
